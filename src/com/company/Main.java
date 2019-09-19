@@ -1,5 +1,6 @@
 package com.company;
 
+import java.io.PrintStream;
 import java.util.Scanner;
 
 public class Main {
@@ -448,26 +449,28 @@ public class Main {
 
         //d)**j/w + skorzystaj z „ternary operator” zamiast standardowej instrukcji if-else
 
-        Scanner scanner = new Scanner(System.in);
-        double suma;
-        double roznica;
+//        Scanner scanner = new Scanner(System.in);
+//        Scanner string = new Scanner(System.in);
+//        //^ z jednym Scannerem pomija wpisywanie stringa... ???
+//
+//        double suma;
+//        double roznica;
+//
+//        System.out.println("Podaj x:");
+//        double x = scanner.nextDouble();
+//        System.out.println("Podaj y:");
+//        double y = scanner.nextDouble();
+//        System.out.println("Suma czy różnica?");
+//        String dzialanie = string.nextLine();
+//
+//        suma = x + y;
+//        roznica = x - y;
+//        final PrintStream msg = dzialanie.equals("suma")
+//                ? System.out.printf("Suma:    %1$-12.12s %2$s %3$-12.12s %4$s %5$s %n", x, "+", y, "=", suma)
+//                : dzialanie.equals("różnica")
+//                ? System.out.printf("Różnica: %1$-12.12s %2$s %3$-12.12s %4$s %5$s", x, "-", y, "=", roznica)
+//                : System.out.printf("błędny wybór");
 
-        System.out.println("Suma czy różnica?");
-        String dzialanie = scanner.nextLine();
-
-        if (dzialanie.equals("suma")) {
-            double x1 = scanner.nextDouble();
-            double y1 = scanner.nextDouble();
-            suma = x1 + y1;
-            System.out.printf("Suma:    %1$-12.12s %2$s %3$-12.12s %4$s %5$s %n", x1, "+", y1, "=", suma);
-        } else if (dzialanie.equals("różnica")) {
-            double x2 = scanner.nextDouble();
-            double y2 = scanner.nextDouble();
-            roznica = x2 - y2;
-            System.out.printf("Różnica: %1$-12.12s %2$s %3$-12.12s %4$s %5$s", x2, "-", y2, "=", roznica);
-        } else {
-            System.out.println("błędny wybór");
-        }
 
         //e)**obsłuż sytuację, w której użytkownik poda wartość 0 podczas dzielenia
 
@@ -524,9 +527,31 @@ public class Main {
         //Napisz program, który pozwoli określić, czy wprowadzona przez użytkownika liczba:
         //a)Jest parzysta
 
+//        Scanner scanner = new Scanner(System.in);
+//
+//        System.out.println("Podaj liczbę:");
+//        double x = scanner.nextDouble();
+//
+//        if (x % 2 == 0) {
+//            System.out.println("Liczba jest parzysta");
+//        } else {
+//            System.out.println("liczba jest nieparzysta");
+//        }
 
         //b)Jest podzielna przez drugą podaną liczbę
 
+//        Scanner scanner = new Scanner(System.in);
+//
+//        System.out.println("Podaj liczbę:");
+//        double x = scanner.nextDouble();
+//        System.out.println("Podaj dzielnik:");
+//        double y = scanner.nextDouble();
+//
+//        if (x % y == 0) {
+//            System.out.println("Liczba jest podzielna przez dzielnik");
+//        } else {
+//            System.out.println("Liczba nie jest podzielna przez dzielnik");
+//        }
 
     }
 }
